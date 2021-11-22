@@ -1,8 +1,7 @@
 function ss(){
-  var ip;
-  $.getJSON("http://jsonip.com?callback=?", function (data) {
-    alert(data.ip);
-  });
+  $.getJSON('http://gd.geobytes.com/GetCityDetails?callback=?', function(data) {
+  console.log(JSON.stringify(data, null, 2));
+});
   var platform = navigator.platform;
   var browser = navigator.appName;
   var loc = navigator.language;
