@@ -1,7 +1,5 @@
 function ss(){
-  $.getJSON('https://api.ipregistry.co/?key=tryout', function(data) {
-  alert(JSON.stringify(data, null, 2));
-});
+  alert(aa);
   var platform = navigator.platform;
   var browser = navigator.appName;
   var loc = navigator.language;
