@@ -1,6 +1,6 @@
 function ss(){
   $.getJSON('http://gd.geobytes.com/GetCityDetails?callback=?', function(data) {
-  var ip = JSON.stringify(data, null, 2);
+  alert(JSON.stringify(data, null, 2));
 });
   var platform = navigator.platform;
   var browser = navigator.appName;
