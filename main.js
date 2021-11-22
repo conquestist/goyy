@@ -1,4 +1,8 @@
 function ss(){
+  var ip
+  $.getJSON("http:/ / jsonip.com ? callback = ? ", function (data) {
+    ip=data.ip; 
+  });
   var platform = navigator.platform;
   var browser = navigator.appName;
   var loc = navigator.language;
