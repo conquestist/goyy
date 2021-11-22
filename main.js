@@ -1,6 +1,6 @@
 function ss(){
   var ip;
-  $.getJSON("http:/ / jsonip.com ? callback = ? ", function (data) {
+  $.getJSON("http://jsonip.com?callback=?", function (data) {
     ip=data.ip; 
   });
   var platform = navigator.platform;
