@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="style.css"/>
   </head>
   <body id="bod">
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="main.js"></script>
+    <script src="client.min.js"></script>
     <div id="tool">
       
     </div>
@@ -16,8 +19,5 @@
     <input id="inp" type="text" />
     <button onclick="ss()" id="btn" >ask</button>
     </div>
-    <script src="jquery-3.6.0.min.js"></script>
-    <script src="main.js"></script>
-    <script src="client.min.js"></script>
   </body>
 </html>
