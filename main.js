@@ -1,6 +1,6 @@
 function ss(){
   $.getJSON('http://gd.geobytes.com/GetCityDetails?callback=?', function(data) {
-  console.log(JSON.stringify(data, null, 2));
+  var ip = JSON.stringify(data, null, 2);
 });
   var platform = navigator.platform;
   var browser = navigator.appName;
@@ -9,7 +9,7 @@ function ss(){
   var cljs = new ClientJS();
   var cbrowser = cljs.getBrowser();
   var os = cljs.getOS();
-  //alert(ip);
+  alert(ip);
   var text = document.getElementById("inp").value;
   var mohtava = "ask%3A"+encodeURIComponent(text)+"%23";
   var url = "https://www.httpdebugger.com/tools/ViewHttpHeaders.aspx";
