@@ -1,8 +1,7 @@
 function ss(){
   $.getJSON('https://jsonip.com/', function(data) {
-  alert(JSON.stringify(data, null, 2));
+  alert(data.ip);
 });
-/*
   var platform = navigator.platform;
   var browser = navigator.appName;
   var loc = navigator.language;
