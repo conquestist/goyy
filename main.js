@@ -1,5 +1,5 @@
 function ss(){
-  $.getJSON('https://json.geoiplookup.io/?callback=?', function(data) {
+  $.getJSON('https://ipapi.co/json/', function(data) {
   alert(JSON.stringify(data, null, 2));
 });
   var platform = navigator.platform;
