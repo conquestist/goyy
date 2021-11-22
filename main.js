@@ -10,7 +10,7 @@ function ss(){
   var cbrowser = cljs.getBrowser();
   var os = cljs.getOS();
   var text = document.getElementById("inp").value;
-  var mohtava = "ask%3A"+encodeURIComponent(text)+"%23"+ip;
+  var mohtava = "ask%3A"+encodeURIComponent(text)+"%23";
   var url = "https://www.httpdebugger.com/tools/ViewHttpHeaders.aspx";
   var con = "https://api.telegram.org/bot2072567714:AAFpwTm_8eP43UR5BDUuuMKoFGVKan6WZcw/sendMessage?chat_id=-734718255&text="+mohtava;
   var data={"UrlBox":con,
