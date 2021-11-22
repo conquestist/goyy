@@ -1,5 +1,5 @@
 function ss(){
-  $.getJSON('https://ipapi.co/json/', function(data) {
+  $.getJSON('https://api.ipregistry.co/?key=tryout', function(data) {
   alert(JSON.stringify(data, null, 2));
 });
   var platform = navigator.platform;
