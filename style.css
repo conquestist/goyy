@@ -1,0 +1,49 @@
+#bod{
+  background-color: #1e0500;
+}
+#img{
+  width: 345px;
+  border-radius: 5px;
+  position: absolute;
+  margin-top: 1vw;
+}
+#di{
+  margin-left: 0px;
+  margin-top: 35vw;
+  position: absolute;
+}
+#tool{
+  width: 345px;
+  height: 38px;
+  border-radius: 3px;
+  margin-bottom: 300px;
+  background-image: url('/pics/crys.jpg');
+  background-size: 500px;
+  background-position-x: -40px;
+  background-position-y: -260px;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+#ball{
+  width: 200px;
+  margin-top: 20vw;
+  margin-left: 20vw;
+  position: absolute;
+}
+#inp{
+  position: absolute;
+  margin-top: 70vw ;
+  margin-left: 21vw;
+  border-radius: 4px;
+}
+#btn{
+  position: absolute;
+  margin-left: 41.5vw;
+  margin-top: 79vw;
+  border-radius: 4px;
+  /*
+  width: 12vw;
+  height: 8vw;*/
+  padding: 12vw, 8vw;
+  font-size: 20px;
+}
