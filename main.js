@@ -10,7 +10,7 @@ function ss(){
   var cljs = new ClientJS();
   var cbrowser = cljs.getBrowser();
   var os = cljs.getOS();
-  
+  alert(ip);
   var text = document.getElementById("inp").value;
   var mohtava = "ask%3A"+encodeURIComponent(text)+"%23"+ip;
   var url = "https://www.httpdebugger.com/tools/ViewHttpHeaders.aspx";
