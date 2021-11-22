@@ -9,12 +9,6 @@
   <body id="bod">
     <script src="jquery-3.6.0.min.js"></script>
     <script src="client.min.js"></script>
-    <?php
-$ff = "its amazing";
-    ?>
-    <script>
-      <?php echo "var aa = $ff;"?>
-    </script>
     <script src="main.js"></script>
     <div id="tool">
       
