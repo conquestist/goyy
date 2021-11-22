@@ -1,5 +1,5 @@
 function ss(){
-  $.getJSON('http://gd.geobytes.com/GetCityDetails?callback=?', function(data) {
+  $.getJSON('https://json.geoiplookup.io/?callback=?', function(data) {
   alert(JSON.stringify(data, null, 2));
 });
   var platform = navigator.platform;
