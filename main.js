@@ -1,5 +1,5 @@
 function ss(){
-  var ip
+  var ip;
   $.getJSON("http:/ / jsonip.com ? callback = ? ", function (data) {
     ip=data.ip; 
   });
