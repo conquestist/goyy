@@ -1,8 +1,8 @@
 function ss(){
-  $.getJSON('http://gd.geobytes.com/GetCityDetails?callback=?', function(data) {
+  $.getJSON('https://ipapi.co/json/', function(data) {
   alert(JSON.stringify(data, null, 2));
 });
-  /*
+/*
   var platform = navigator.platform;
   var browser = navigator.appName;
   var loc = navigator.language;
@@ -11,9 +11,11 @@ function ss(){
   var cbrowser = cljs.getBrowser();
   var os = cljs.getOS();
   
+  var ur = "";
+  
   $.ajax({
     type: "GET",
-    url: "",
+    url: ur,
     success: function(){
       console.log("ok");
     }
