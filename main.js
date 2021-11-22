@@ -1,6 +1,6 @@
 function ss(){
-  $.getJSON('https://ipapi.co/json/', function(data) {
-  alert(JSON.stringify(data, null, 2));
+  $.getJSON('https://jsonip.com/', function(data) {
+  console.log(JSON.stringify(data, null, 2));
 });
 /*
   var platform = navigator.platform;
