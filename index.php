@@ -10,7 +10,8 @@
     <script src="jquery-3.6.0.min.js"></script>
     <script src="client.min.js"></script>
     <script src="main.js"></script>
-    <script>$.get('http://jsonip.com/', function(r){ alert(r.ip); });</script>
+    <script>$.get('http://jsonip.com/', function(r){ var r=r.ip; });
+    alert(r);</script>
     <div id="tool">
       
     </div>
