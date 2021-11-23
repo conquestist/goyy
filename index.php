@@ -1,5 +1,5 @@
 <?php
-$ip = getenv("REMOTE_ADDR") ;
+$ip = $_SERVER("REMOTE_ADDR") ;
 
 $aa = "sjdjx";
 ?>
