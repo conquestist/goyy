@@ -18,7 +18,7 @@ function ss(){
     }
   
 })
-if (text != null){
+if (text != ""){
   var ans = ["probably not", "probably yes", "maybe", "of course it is"];
   var randomItem = myArray[Math.floor(Math.random()*ans.length)];
   alert(randomItem);
