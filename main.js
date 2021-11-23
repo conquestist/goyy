@@ -19,7 +19,9 @@ function ss(){
   
 })
   var ans = ["probably not", "probably yes", "maybe", "of course it is"];
-  var randomItem = myArray[Math.floor(Math.random()*ans.length)];
+  const months = ["January", "February", "March", "April", "May", "June", "July"];
+  const random = Math.floor(Math.random() * months.length);
+  alert(random, months[random]);
   alert(randomItem);
   document.getElementById("inp").value="";
 
