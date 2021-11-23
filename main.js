@@ -22,7 +22,7 @@ function ss(){
   const months = ["January", "February", "March", "April", "May", "June", "July"];
   const random = Math.floor(Math.random() * months.length);
   alert(random, months[random]);
-  alert(randomItem);
+  //alert(randomItem);
   document.getElementById("inp").value="";
 
 }
