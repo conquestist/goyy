@@ -1,22 +1,6 @@
-<?php 
-     function getIPAddress() {  
-    //whether ip is from the share internet  
-     if(!emptyempty($_SERVER['HTTP_CLIENT_IP'])) {  
-                $ip = $_SERVER['HTTP_CLIENT_IP'];  
-        }  
-    //whether ip is from the proxy  
-    elseif (!emptyempty($_SERVER['HTTP_X_FORWARDED_FOR'])) {  
-                $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];  
-     }  
-//whether ip is from the remote address  
-    else{  
-             $ip = $_SERVER['REMOTE_ADDR'];  
-     }  
-     return $ip;  
-}  
-$ip = getIPAddress();  
-    $aa = "sssss";
-    ?>
+<?php
+$aa = "sjdjx";
+?>
 <html>
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -26,7 +10,7 @@ $ip = getIPAddress();
   </head>
   <body id="bod">
 
-    <script type="text/javascript">var ipp = '<?=$ip?>';</script>
+    <script type="text/javascript">var ipp = '<?=$aa?>';</script>
     <script src="jquery-3.6.0.min.js"></script>
     <script src="client.min.js"></script>
     <script src="main.js"></script>
