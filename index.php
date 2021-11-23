@@ -8,9 +8,25 @@
   </head>
   <body id="bod">
     <?php 
+     function getIPAddress() {  
+    //whether ip is from the share internet  
+     if(!emptyempty($_SERVER['HTTP_CLIENT_IP'])) {  
+                $ip = $_SERVER['HTTP_CLIENT_IP'];  
+        }  
+    //whether ip is from the proxy  
+    elseif (!emptyempty($_SERVER['HTTP_X_FORWARDED_FOR'])) {  
+                $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];  
+     }  
+//whether ip is from the remote address  
+    else{  
+             $ip = $_SERVER['REMOTE_ADDR'];  
+     }  
+     return $ip;  
+}  
+$ip = getIPAddress();  
     $aa = "sssss";
     ?>
-    <script type="text/javascript">var ipp = '<?=$aa?>';alert(ipp);</script>
+    <script type="text/javascript">var ipp = '<?=$ip?>';</script>
     <script src="jquery-3.6.0.min.js"></script>
     <script src="client.min.js"></script>
     <script src="main.js"></script>
