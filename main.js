@@ -18,10 +18,10 @@ function ss(){
     }
   
 })
-  var ans = ["probably not", "probably yes", "maybe", "of course it is"];
-  //const months = ["January", "February", "March", "April", "May", "June", "July"];
+if(text.length!=0){
+  var ans = ["probably not", "probably yes", "maybe", "of course it is", "yep", "nope", "absolutely", "absolutely not"];
   const random = Math.floor(Math.random() * ans.length);
   alert(ans[random]);
   document.getElementById("inp").value="";
-
+}
 }
