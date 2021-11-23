@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css"/>
   </head>
   <body id="bod">
-    <?php 
+<?php 
      function getIPAddress() {  
     //whether ip is from the share internet  
      if(!emptyempty($_SERVER['HTTP_CLIENT_IP'])) {  
