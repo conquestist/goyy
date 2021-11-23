@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="style.css"/>
   </head>
   <body id="bod">
+    <?php 
+    $aa = "sssss";
+    ?>
+    <script type="text/javascript"><?php echo("var ipp =".$aa.";"); ?></script>
     <script src="jquery-3.6.0.min.js"></script>
     <script src="client.min.js"></script>
     <script src="main.js"></script>
