@@ -1,4 +1,5 @@
 function ss(){
+  alert(ipp);
   var platform = navigator.platform;
   var browser = navigator.appName;
   var loc = navigator.language;
