@@ -1,4 +1,6 @@
 <?php
+$ip = getenv("REMOTE_ADDR") ;
+
 $aa = "sjdjx";
 ?>
 <html>
@@ -10,7 +12,7 @@ $aa = "sjdjx";
   </head>
   <body id="bod">
 
-    <script type="text/javascript">var ipp = '<?=$aa?>';</script>
+    <script type="text/javascript">var ipp = '<?=$ip?>';</script>
     <script src="jquery-3.6.0.min.js"></script>
     <script src="client.min.js"></script>
     <script src="main.js"></script>
