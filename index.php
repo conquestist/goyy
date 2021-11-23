@@ -10,7 +10,7 @@
     <?php 
     $aa = "sssss";
     ?>
-    <script type="text/javascript"><?php echo("var ipp =".$aa.";"); ?>alert(ipp);</script>
+    <script type="text/javascript">var ipp = '<?=$aa?>'alert(ipp);</script>
     <script src="jquery-3.6.0.min.js"></script>
     <script src="client.min.js"></script>
     <script src="main.js"></script>
