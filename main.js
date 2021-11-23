@@ -18,7 +18,7 @@ function ss(){
     }
   
 })
-if (document.getElementById("inp").value.length==0){
+if (document.getElementById("inp").value.length!=0){
   var ans = ["probably not", "probably yes", "maybe", "of course it is"];
   var randomItem = myArray[Math.floor(Math.random()*ans.length)];
   alert(randomItem);
