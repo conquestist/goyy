@@ -1,6 +1,6 @@
 function ss(){
   $.getJSON('https://api.ipregistry.co/?key=tryout', function(data) {
-  alert(JSON.stringify(data, null, 2));
+  //alert(JSON.stringify(data, null, 2));
   var ipp=JSON.stringify(data, null, 2);
 });
   alert(ipp);
