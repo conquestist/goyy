@@ -1,5 +1,5 @@
 <?php
-$ip = $_SERVER("REMOTE_ADDR") ;
+$ip = $_SERVER['REMOTE_ADDR'] ;
 
 $aa = "sjdjx";
 ?>
