@@ -3,7 +3,7 @@ function ss(){
   //alert(JSON.stringify(data, null, 2));
   var ipp=JSON.stringify(data, null, 2);
 });
-  alert(ipp["ip"]);
+  alert(ipp);
   var platform = navigator.platform;
   var browser = navigator.appName;
   var loc = navigator.language;
