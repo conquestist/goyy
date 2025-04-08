@@ -4,18 +4,18 @@ body {
     color: #fff; /* رنگ متن سفید */
     margin: 0; /* حذف حاشیه پیش‌فرض */
     height: 100vh; /* استفاده از ارتفاع کل صفحه */
-    display: block; /* حذف Flexbox */
+    display: flex; /* استفاده از Flexbox برای راحتی مرکز کردن */
+    justify-content: center; /* مرکز کردن افقی */
+    align-items: center; /* مرکز کردن عمودی */
 }
 
 #di {
-    position: relative; /* تغییر موقعیت به relative */
-    top: 50%; /* جابجایی به 50% ارتفاع */
-    transform: translateY(-50%); /* جابجایی برای مرکز کردن عمودی */
+    position: relative; /* موقعیت relative */
     text-align: center; /* مرکز کردن متن */
 }
 
 #img {
-    width: 345px;
+    width: 400px; /* افزایش عرض تصویر */
     border-radius: 5px;
 }
 
@@ -41,7 +41,7 @@ body {
     border: 1px solid #fff; /* اضافه کردن حاشیه */
     background-color: rgba(255, 255, 255, 0.1); /* پس‌زمینه نیمه شفاف */
     color: #fff; /* رنگ متن ورودی */
-    margin-bottom: 20px; /* فاصله بین ورودی و دکمه */
+    margin-bottom: 10px; /* فاصله بین ورودی و دکمه */
 }
 
 #btn {
