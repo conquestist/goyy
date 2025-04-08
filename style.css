@@ -1,49 +1,66 @@
-#bod{
-  background-color: #1e0500;
+body {
+    background-color: #1e0500;
+    font-family: Arial, sans-serif; /* انتخاب فونت مناسب */
+    color: #fff; /* رنگ متن سفید */
+    margin: 0; /* حذف حاشیه پیش‌فرض */
 }
-#img{
-  width: 345px;
-  border-radius: 5px;
-  position: absolute;
-  margin-top: 1vw;
+
+#img {
+    width: 345px;
+    border-radius: 5px;
+    position: absolute;
+    margin-top: 1vw;
 }
-#di{
-  margin-left: 0px;
-  margin-top: 35vw;
-  position: absolute;
+
+#di {
+    margin-left: 0;
+    margin-top: 35vw;
+    position: absolute;
 }
-#tool{
-  width: 345px;
-  height: 38px;
-  border-radius: 3px;
-  margin-bottom: 300px;
-  background-image: url('/pics/crys.jpg');
-  background-size: 500px;
-  background-position-x: -40px;
-  background-position-y: -260px;
-  background-repeat: no-repeat;
-  position: absolute;
+
+#tool {
+    width: 345px;
+    height: 38px;
+    border-radius: 3px;
+    margin-bottom: 300px;
+    background-image: url('/pics/crys.jpg');
+    background-size: cover; /* تنظیم به cover */
+    background-position: center; /* مرکز کردن تصویر */
+    position: absolute;
 }
-#ball{
-  width: 200px;
-  margin-top: 20vw;
-  margin-left: 20vw;
-  position: absolute;
+
+#ball {
+    width: 200px;
+    margin-top: 20vw;
+    margin-left: 20vw;
+    position: absolute;
 }
-#inp{
-  position: absolute;
-  margin-top: 70vw ;
-  margin-left: 21vw;
-  border-radius: 4px;
+
+#inp {
+    position: absolute;
+    margin-top: 70vw;
+    margin-left: 21vw;
+    border-radius: 4px;
+    padding: 10px; /* padding برای ورودی */
+    border: 1px solid #fff; /* اضافه کردن حاشیه */
+    background-color: rgba(255, 255, 255, 0.1); /* پس‌زمینه نیمه شفاف */
+    color: #fff; /* رنگ متن ورودی */
 }
-#btn{
-  position: absolute;
-  margin-left: 41.5vw;
-  margin-top: 79vw;
-  border-radius: 4px;
-  /*
-  width: 12vw;
-  height: 8vw;*/
-  padding: 12vw, 8vw;
-  font-size: 20px;
+
+#btn {
+    position: absolute;
+    margin-left: 41.5vw;
+    margin-top: 79vw;
+    border-radius: 4px;
+    padding: 12px 8px; /* استفاده صحیح از padding */
+    font-size: 20px;
+    background-color: #fff; /* پس‌زمینه سفید برای دکمه */
+    color: #000; /* رنگ متن دکمه */
+    border: none; /* حذف حاشیه */
+    cursor: pointer; /* تغییر نشانگر به pointer */
+    transition: background-color 0.3s ease; /* انیمیشن ملایم */
+}
+
+#btn:hover {
+    background-color: #f0f0f0; /* تغییر رنگ پس‌زمینه در hover */
 }
