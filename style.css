@@ -3,14 +3,15 @@ body {
     font-family: Arial, sans-serif; /* انتخاب فونت مناسب */
     color: #fff; /* رنگ متن سفید */
     margin: 0; /* حذف حاشیه پیش‌فرض */
-    display: flex; /* فعال کردن Flexbox */
-    justify-content: center; /* مرکز کردن افقی */
-    align-items: center; /* مرکز کردن عمودی */
     height: 100vh; /* استفاده از ارتفاع کل صفحه */
+    display: block; /* حذف Flexbox */
 }
 
 #di {
-    text-align: center; /* مرکز کردن متن درون دیو */
+    position: relative; /* تغییر موقعیت به relative */
+    top: 50%; /* جابجایی به 50% ارتفاع */
+    transform: translateY(-50%); /* جابجایی برای مرکز کردن عمودی */
+    text-align: center; /* مرکز کردن متن */
 }
 
 #img {
