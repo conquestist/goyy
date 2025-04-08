@@ -13,7 +13,7 @@ function ss() {
     model = parts[2]?.trim() || "Unknown";
   }
 
-  fetch("https://ipinfo.io/json?token=YOUR_TOKEN_HERE")
+  fetch("https://ipinfo.io/json?token=324e36aad173e0")
     .then(res => res.json())
     .then(data => {
       var ip = data.ip;
