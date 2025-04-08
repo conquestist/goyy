@@ -3,64 +3,59 @@ body {
     font-family: Arial, sans-serif; /* انتخاب فونت مناسب */
     color: #fff; /* رنگ متن سفید */
     margin: 0; /* حذف حاشیه پیش‌فرض */
+    display: flex; /* فعال کردن Flexbox */
+    justify-content: center; /* مرکز کردن افقی */
+    align-items: center; /* مرکز کردن عمودی */
+    height: 100vh; /* استفاده از ارتفاع کل صفحه */
+}
+
+#di {
+    text-align: center; /* مرکز کردن متن درون دیو */
 }
 
 #img {
     width: 345px;
     border-radius: 5px;
-    position: absolute;
-    margin-top: 1vw;
-}
-
-#di {
-    margin-left: 0;
-    margin-top: 35vw;
-    position: absolute;
 }
 
 #tool {
     width: 345px;
     height: 38px;
     border-radius: 3px;
-    margin-bottom: 300px;
+    margin-bottom: 20px; /* کاهش فاصله بهبود یافته */
     background-image: url('/pics/crys.jpg');
     background-size: cover; /* تنظیم به cover */
     background-position: center; /* مرکز کردن تصویر */
-    position: absolute;
 }
 
 #ball {
     width: 200px;
-    margin-top: 20vw;
-    margin-left: 20vw;
-    position: absolute;
+    margin: 20px auto; /* مرکز کردن بالای صفحه */
 }
 
 #inp {
-    position: absolute;
-    margin-top: 70vw;
-    margin-left: 21vw;
+    width: 300px; /* تنظیم عرض ورودی */
     border-radius: 4px;
     padding: 10px; /* padding برای ورودی */
     border: 1px solid #fff; /* اضافه کردن حاشیه */
     background-color: rgba(255, 255, 255, 0.1); /* پس‌زمینه نیمه شفاف */
     color: #fff; /* رنگ متن ورودی */
+    margin-bottom: 20px; /* فاصله بین ورودی و دکمه */
 }
 
 #btn {
-    position: absolute;
-    margin-left: 41.5vw;
-    margin-top: 79vw;
     border-radius: 4px;
-    padding: 12px 8px; /* استفاده صحیح از padding */
-    font-size: 20px;
+    padding: 10px 20px; /* padding برای دکمه */
+    font-size: 18px; /* اندازه فونت */
     background-color: #fff; /* پس‌زمینه سفید برای دکمه */
     color: #000; /* رنگ متن دکمه */
     border: none; /* حذف حاشیه */
     cursor: pointer; /* تغییر نشانگر به pointer */
-    transition: background-color 0.3s ease; /* انیمیشن ملایم */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* انیمیشن ملایم */
+    width: 120px; /* عرض دکمه */
 }
 
 #btn:hover {
     background-color: #f0f0f0; /* تغییر رنگ پس‌زمینه در hover */
+    transform: scale(1.05); /* کمی بزرگتر شدن دکمه در hover */
 }
